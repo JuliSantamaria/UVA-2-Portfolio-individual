@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles2.0.css">
+    <title>Pagina web profesional</title>
+</head>
+<body>
+    <div class="background">
+        <header class="header">
+            <div class="menu container">
+                <!-- Checkbox para el control del menú -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="educacion.html">Educacion</a></li>
+                        <li><a href="competencias.html">Competencias</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contacto">
+            <div class="contact-form-container">
+                <h2>Contactame</h2>
+                <form action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="fullname" placeholder="Nombre Completo" required>
+                        <input type="email" name="Apellido" placeholder="Apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="mobile" placeholder="Numero de telefono" required>
+                        <input type="text" name="subject" placeholder="Correo electronico" required>
+                    </div>
+                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; 2024 Julian Santamaria. Todos los derechos reservados.</p>
+            <p>Email: julian@example.com | Teléfono: +54 9 11 2345-6789</p>
+        </div>
+
+    </footer>
+</body>
+</html>
