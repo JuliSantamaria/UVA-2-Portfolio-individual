@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles2.0.css">
+    <link rel="stylesheet" href="css/ScreensNoHome.css">
     <title>Pagina web profesional</title>
 </head>
 <body>
@@ -29,21 +29,23 @@
         <main class="contacto">
             <div class="contact-form-container">
                 <h2>Contactame</h2>
-                <form action="/submit-form" method="POST">
+                <form id="contactForm">
                     <div class="form-group">
-                        <input type="text" name="fullname" placeholder="Nombre Completo" required>
-                        <input type="email" name="Apellido" placeholder="Apellido" required>
+                        <input type="text" id="fullname" placeholder="Nombre Completo">
+                        <input type="text" id="lastname" placeholder="Apellido">
                     </div>
                     <div class="form-group">
-                        <input type="tel" name="mobile" placeholder="Numero de telefono" required>
-                        <input type="text" name="subject" placeholder="Correo electronico" required>
+                        <input type="tel" id="mobile" placeholder="Número de teléfono">
+                        <input type="text" id="email" placeholder="Correo electrónico">
                     </div>
-                    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    <textarea id="message" placeholder="Tu mensaje"></textarea>
                     <button type="submit">Enviar Mensaje</button>
                 </form>
             </div>
         </main>
     </div>
+
+    <button id="scrollToTopBtn" title="Volver arriba">⬆</button>
 
     <footer>
         <div class="footer-content container">
@@ -52,5 +54,9 @@
         </div>
 
     </footer>
+
+    <script src="scripts/scrollToTop.js"></script>
+    <script src="scripts/validacionformulario.js"></script>
+
 </body>
 </html>
