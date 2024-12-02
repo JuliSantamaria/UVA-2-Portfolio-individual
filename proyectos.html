@@ -10,7 +10,7 @@
     <div class="background">
         <header class="header">
             <div class="menu container">
-                <!-- Checkbox para el control del menú -->
+                
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle" class="menu-icon">&#9776;</label>
                 
@@ -31,17 +31,17 @@
                 <div class="project-box">
                     <h3>Pagina web Hotel Porteño</h3>
                     <p>En este proyecto he desarrollado una pagina web completa responsive para un hotel ficticio con objetivos academicos.</p>
-                    <a href="#" class="read-more">Ir a repositorio</a>
+                    <a href="https://github.com/JuliSantamaria/Proyecto-final-CoC" target="_blank" class="read-more">Ir a repositorio</a>
                 </div>
                 <div class="project-box">
                     <h3>Crud en PHP</h3>
                     <p>En este proyecto he realizado un CRUD utilizando PHP como lenguaje de programacion y PHPmyadmin como base de datos</p>
-                    <a href="#" class="read-more">Ir a repositorio</a>
+                    <a href="https://github.com/JuliSantamaria/Crud-Digitalmind"  target="_blank" class="read-more">Ir a repositorio</a>
                 </div>
                 <div class="project-box">
                     <h3>App Mobile Band-Up</h3>
                     <p>En este proyecto he realizado una app mobile red social llamada Band-Up utilizando React-Native, Firebase y Expo.</p>
-                    <a href="#" class="read-more">Ir a repositorio</a>
+                    <a href="https://github.com/JuliSantamaria/BandUp"  target="_blank" class="read-more">Ir a repositorio</a>
                 </div>
             </div>
         </main>
@@ -58,6 +58,28 @@
     </footer>
 
     <script src="scripts/scrollToTop.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.toggle-content');
+    
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Encuentra todos los elementos ocultos en el mismo servicio
+                    const hiddenContent = button.parentElement.querySelectorAll('.hidden-content');
+                    hiddenContent.forEach(element => {
+                        if (element.style.display === 'none') {
+                            element.style.display = 'block'; // Muestra el contenido e imágenes
+                            button.textContent = 'Ocultar'; // Cambia el texto del botón
+                        } else {
+                            element.style.display = 'none'; // Oculta el contenido e imágenes
+                            button.textContent = 'Mostrar más'; // Cambia el texto del botón
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 window.onscroll = function() {
     const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) // Si el usuario se ha desplazado mas de 100 pixeles hacia abajo...
+    {
         scrollToTopBtn.style.display = "block"; // Mostrar botón si hay scroll
     } else {
         scrollToTopBtn.style.display = "none"; // Ocultar botón si no hay scroll
