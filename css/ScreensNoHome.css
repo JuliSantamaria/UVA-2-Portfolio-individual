@@ -427,7 +427,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     .menu .navbar ul {
         display: none;
