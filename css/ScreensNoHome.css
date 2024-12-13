@@ -548,6 +548,12 @@ footer {
         padding: 10px 20px;
     }
 
+    .project-box {
+        width: 90%;
+        height: 100%;
+        padding-bottom: 50px; 
+    }
+
     .footer-content p {
         font-size: 10px;
     }
