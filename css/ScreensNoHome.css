@@ -387,7 +387,7 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 90%; /* Mayor ancho para dispositivos pequeños */
+        width: 90%; 
     }
 
     .education-section img {
@@ -400,12 +400,12 @@ footer {
     }
 
     .logo-container {
-        flex-direction: row;
+        
         gap: 10px;
     }
 
     .logo-container img {
-        height: 40px; /* Reduce el tamaño en dispositivos más pequeños */
+        height: 40px; 
     }
 
     .projects-section {
@@ -414,7 +414,7 @@ footer {
     }
 
     .project-box {
-        width: 90%; /* Ajustar para dispositivos más pequeños */
+        width: 90%; 
     }
     
     .form-group {
@@ -434,8 +434,8 @@ footer {
     }
 
     .menu-icon {
-        display: block; /* Esto hará que el botón de hamburguesa sea visible */
-        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+        display: block; 
+        z-index: 1000; 
         position: relative;
         left: 155px;
     }
@@ -443,8 +443,8 @@ footer {
     .menu .navbar ul {
         display: none;
         position: absolute;
-        width: 100%; /* Toma todo el ancho */
-        background-color: black; /* Fondo azul oscuro, ajustar según el diseño */
+        width: 100%; 
+        background-color: black;
         height: 120vh;
         left: 0;
         z-index: 1;
@@ -535,9 +535,11 @@ footer {
 
     .form-group {
         flex-direction: column;
+        gap:20px;
     }
 
     .form-group input,
+    
     .contact-form-container textarea {
         width: 100%;
         font-size: 14px;
@@ -553,12 +555,20 @@ footer {
         height: 100%;
         padding-bottom: 50px; 
     }
+    
+    #message {
+        height: 100px;
+        margin-bottom: 20px;
+    }
 
     .footer-content p {
         font-size: 10px;
     }
 
 }
+
+    
+
 
     
 
